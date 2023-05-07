@@ -1,4 +1,4 @@
-import { Context, useContext } from 'react';
+import React, { Context, useContext } from 'react';
 type InScope<T = object> = { inScope: boolean } & T;
 
 const useContextInScope: <T extends InScope>(

@@ -5,7 +5,11 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    library: 'react-tiny-dialog',
+    library: {
+      name: 'react-tiny-dialog',
+      type: 'global',
+    },
+    clean: true,
   },
   module: {
     rules: [
@@ -17,7 +21,7 @@ module.exports = {
         },
       },
       {
-        test: /\.tsx?$/,
+        test: /\.(ts|tsx)?$/,
         exclude: /node_modules/,
         use: {
           loader: 'ts-loader',
@@ -25,7 +29,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
       },
     ],
   },

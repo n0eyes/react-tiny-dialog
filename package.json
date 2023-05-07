@@ -1,7 +1,6 @@
 {
   "name": "react-tiny-dialog",
-  "type": "module",
-  "version": "0.2.1",
+  "version": "0.2.3",
   "description": "n0eyes-react-tiny-dialog",
   "private": false,
   "main": "./dist/index.js",
@@ -26,8 +25,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@babel/cli": "^7.21.5",
     "@babel/core": "^7.21.5",
     "@babel/preset-env": "^7.21.5",
@@ -36,7 +33,10 @@
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
     "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "style-loader": "^3.3.2",
     "ts-loader": "^9.4.2",
     "typescript": "^5.0.4",
