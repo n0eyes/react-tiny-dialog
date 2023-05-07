@@ -1,7 +1,7 @@
 {
   "name": "react-tiny-dialog",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "n0eyes-react-tiny-dialog",
   "private": false,
   "main": "./dist/index.js",
