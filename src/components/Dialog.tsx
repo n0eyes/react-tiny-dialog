@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import DialogProvider, { useDialogContext } from '../context/DialogContext';
 import { composeEventHandlers } from '../utils/dom';
 import { getValidProps } from '../utils/jsx';
-import './Dialog.css';
+import styles from './Dialog.module.css';
 
 import {
   BackDropProps,
@@ -39,7 +39,7 @@ function Trigger(props: PropsWithChildren<TriggerProps>) {
     <button
       {...restProps}
       onClick={composeEventHandlers(onClickProps, openHandler)}
-      className="Trigger">
+      className={styles.Trigger}>
       {children}
     </button>
   );
@@ -75,7 +75,7 @@ function BackDrop(props: PropsWithChildren<BackDropProps>) {
     <div
       {...restProps}
       onClick={composeEventHandlers(onClickProps, openHandler)}
-      className="BackDrop"
+      className={styles.BackDrop}
     />
   );
 
@@ -91,7 +91,7 @@ function Content(props: PropsWithChildren<ContentProps>) {
       ...restProps,
     })
   ) : (
-    <div {...restProps} className="Content">
+    <div {...restProps} className={styles.Content}>
       {children}
     </div>
   );
@@ -118,7 +118,7 @@ function Close(props: PropsWithChildren<CloseProps>) {
     <button
       {...restProps}
       onClick={composeEventHandlers(onClickProps, openHandler)}
-      className="Close">
+      className={styles.Close}>
       {children}
     </button>
   );
