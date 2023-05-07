@@ -132,4 +132,4 @@ Dialog.BackDrop = BackDrop;
 Dialog.Content = Content;
 Dialog.Close = Close;
 
-export default Dialog;
+export { Dialog };
